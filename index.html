@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shree Mayuresh Tutorials | Titwala</title>
+    <meta name="description" content="Premier coaching institute in Titwala for School, Science, and Commerce." />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Link to custom vanilla CSS -->
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+      <div class="preloader-content">
+        <div class="pl-radar"></div>
+        <div class="pl-text">Initializing AI...</div>
+      </div>
+    </div>
+
+    <!-- Top Scroll Progress Line -->
+    <div class="scroll-progress-container">
+      <div id="scroll-progress"></div>
+    </div>
+
+    <!-- Header Notification Bar -->
+    <div class="top-bar">
+      <div class="container top-bar-content">
+        <span class="flex items-center gap-2">📍 Mandir Road, Titwala, Kalyan, Maharashtra 421605</span>
+        <div class="top-bar-contact">
+          <span class="flex items-center gap-2">📞 +91 084520 66871</span>
+          <a href="#" id="noticeTrigger" class="whatsapp-link flex items-center gap-2">📜 Notice Board</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <header id="navbar">
+      <div class="container nav-container">
+        <a href="#" class="logo">
+          <svg class="logo-icon" viewBox="0 0 50 50" width="36" height="36">
+            <path d="M 8 42 L 8 8 L 25 25 L 42 8 L 42 42" fill="transparent" stroke="var(--color-primary)" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" />
+            <path d="M 0 50 L 50 50" stroke="var(--color-accent)" stroke-width="6" />
+          </svg>
+          <span class="logo-text">Shree Mayuresh <span class="accent">Tutorials</span></span>
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <nav class="nav-links" id="nav-links">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About Us</a>
+          <a href="#courses" class="nav-link">Programs</a>
+          <a href="#test-series" class="nav-link">Test Series</a>
+          <a href="#toppers" class="nav-link">Results</a>
+          <a href="#faq" class="nav-link">FAQ</a>
+          <a href="#contact" class="btn-primary-outline">Enroll Now</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero reveal">
+      <div class="hero-overlay"></div>
+      
+      <!-- Floating Shapes -->
+      <div class="floating-shape shape-1"></div>
+      <div class="floating-shape shape-2"></div>
+      <div class="floating-shape shape-3"></div>
+
+      <div class="container hero-content">
+        <span class="hero-badge">TITWALA'S PREMIER COACHING</span>
+        <h1>Excellence in Education <br>Starts Here.</h1>
+        <p>Dedicated to providing quality education for SSC, HSC, and Competitive Exams with expert faculty and a student-centric approach.</p>
+        
+        <!-- Animated Countdown -->
+        <div class="countdown-wrapper">
+          <p class="countdown-title">Next Batch Starts In:</p>
+          <div class="countdown">
+            <div class="cd-box"><span id="cd-days">00</span><small>Days</small></div>
+            <div class="cd-box"><span id="cd-hours">00</span><small>Hours</small></div>
+            <div class="cd-box"><span id="cd-mins">00</span><small>Mins</small></div>
+            <div class="cd-box"><span id="cd-secs">00</span><small>Secs</small></div>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#courses" class="btn btn-primary">Explore Courses</a>
+          <a href="#contact" class="btn btn-secondary">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats-section border-b reveal">
+      <div class="container pt-0 pb-0">
+        <div class="grid stats-grid">
+          <div class="stat-card border-r">
+            <div class="stat-num text-accent" data-target="15">0</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-card border-r bg-slate-50">
+            <div class="stat-num text-primary" data-target="500">0</div>
+            <div class="stat-label">Students Success</div>
+          </div>
+          <div class="stat-card border-r">
+            <div class="stat-num text-accent" data-target="100" data-percent="true">0</div>
+            <div class="stat-label">Personal Attention</div>
+          </div>
+          <div class="stat-card bg-slate-50">
+            <div class="stat-num text-primary font-text">Expert</div>
+            <div class="stat-label">Qualified Faculty</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section / Infrastructure -->
+    <section id="about" class="section reveal">
+      <div class="container about-container">
+        <div class="about-text">
+          <div class="section-badge">Why Choose Us?</div>
+          <h2>World-Class Education & Infrastructure</h2>
+          <p>We believe learning requires a focused environment. Our modern classrooms and structured methodology ensure every student gets the absolute best.</p>
+          <ul class="features-list">
+            <li>✔ Air-Conditioned Classrooms</li>
+            <li>✔ Comprehensive Printed Study Materials</li>
+            <li>✔ Regular Weekly Assessments</li>
+            <li>✔ Personalized Doubt Clearing Sessions</li>
+            <li>✔ Regular Parent-Teacher Interactions</li>
+          </ul>
+        </div>
+        <div class="about-image-wrapper">
+          <div class="image-stack">
+            <div class="img-front">Premium Infrastructure</div>
+            <div class="img-back"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="section bg-light reveal">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-badge">Our Courses</div>
+          <h2>Comprehensive Coaching For All</h2>
+          <p class="section-subtitle">We offer structured batches tailored for various academic requirements ensuring thorough preparation.</p>
+        </div>
+        <div class="grid cards-grid">
+          <div class="card">
+            <div class="card-icon">📚</div>
+            <h3>School Section</h3>
+            <p>Complete coaching for State Board (SSC) from 8th to 10th standard with extensive mock exams and focus on foundational clarity.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🔬</div>
+            <h3>Science stream (XI - XII)</h3>
+            <p>Focused curriculum for HSC including dedicated preparation for MHT-CET, JEE & NEET with specialized faculty.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">📊</div>
+            <h3>Commerce stream (XI - XII)</h3>
+            <p>Expert guidance for core commerce subjects including Accountancy, Economics, SP and Mathematics.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Test Series Section -->
+    <section id="test-series" class="section bg-light reveal">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-badge">Practice</div>
+          <h2>Interactive Test Series</h2>
+          <p class="section-subtitle">PW-inspired real-time mock tests for comprehensive exam readiness.</p>
+        </div>
+        <div class="grid test-grid">
+          <div class="test-card">
+            <div class="test-icon">🩺</div>
+            <h3>NEET Mock Test</h3>
+            <p>Physics, Chemistry, Biology (75 Qs)</p>
+            <button class="btn btn-primary start-test-btn" data-exam="neet">Start Test</button>
+          </div>
+          <div class="test-card">
+            <div class="test-icon">📐</div>
+            <h3>JEE Mock Test</h3>
+            <p>Physics, Chemistry, Maths (75 Qs)</p>
+            <button class="btn btn-primary start-test-btn" data-exam="jee">Start Test</button>
+          </div>
+          <div class="test-card">
+            <div class="test-icon">🎓</div>
+            <h3>Std 10th (SSC)</h3>
+            <p>Science, Mathematics (50 Qs)</p>
+            <button class="btn btn-primary start-test-btn" data-exam="ssc">Start Test</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Toppers Section -->
+    <section id="toppers" class="section reveal">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-badge">Results</div>
+          <h2>🏆 Our Hall of Fame</h2>
+          <p class="section-subtitle">Celebrating the outstanding achievements of our students.</p>
+        </div>
+        <div class="grid toppers-grid">
+          <div class="topper-card">
+            <div class="topper-avatar">SM</div>
+            <h4>Sumit M.</h4>
+            <div class="score">95.4%</div>
+            <p>SSC Board</p>
+          </div>
+          <div class="topper-card highlight">
+            <div class="topper-avatar">AR</div>
+            <h4>Aditi R.</h4>
+            <div class="score">97.2%</div>
+            <p>HSC Science</p>
+          </div>
+          <div class="topper-card">
+            <div class="topper-avatar">KP</div>
+            <h4>Kunal P.</h4>
+            <div class="score">94.8%</div>
+            <p>HSC Commerce</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Slider -->
+    <section class="section bg-primary text-white slider-section reveal">
+      <div class="container">
+        <div class="section-header text-center light">
+          <div class="section-badge light">Feedback</div>
+          <h2 class="text-white">Student Reviews</h2>
+        </div>
+        <div class="testimonial-slider">
+          <div class="t-wrapper">
+            <div class="t-track" id="tTrack">
+              <div class="t-slide">
+                <p class="t-quote">"The faculty is extremely supportive and the weekly tests helped me build immense confidence for my board exams."</p>
+                <div class="t-author">- Neha J., 10th Grade</div>
+              </div>
+              <div class="t-slide">
+                <p class="t-quote">"Shree Mayuresh Tutorials provides the perfect environment for studying. The notes are comprehensive and easy to understand."</p>
+                <div class="t-author">- Rahul S., 12th Science</div>
+              </div>
+              <div class="t-slide">
+                <p class="t-quote">"Enrolling my child here was the best decision. The level of personal attention is unmatched in Titwala."</p>
+                <div class="t-author">- Mrs. Kadam, Parent</div>
+              </div>
+            </div>
+          </div>
+          <div class="t-dots">
+            <div class="t-dot active"></div>
+            <div class="t-dot"></div>
+            <div class="t-dot"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Meet Our Founder Section -->
+    <section id="founder" class="section reveal">
+      <div class="container">
+        <div class="founder-wrapper">
+          <div class="founder-img"></div>
+          <div class="founder-content">
+            <div class="section-badge">Leadership</div>
+            <h2>Meet Our Founder</h2>
+            <p>With over 15 years of experience in the educational sector, our founder has been the driving force behind Shree Mayuresh Tutorials. Dedicated to empowering students with the right knowledge, disciplined methodology, and moral values, the vision is to create not just toppers, but well-rounded individuals ready for future challenges.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section id="faq" class="section bg-light reveal">
+      <div class="container max-w-3xl">
+        <div class="section-header text-center">
+          <div class="section-badge">FAQ</div>
+          <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-accordion">
+          <div class="faq-item">
+            <div class="faq-question">What are the timing of the batches? <span class="faq-icon">+</span></div>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">Batch timings are flexible and customized based on the standard and stream. We run separate morning batches for college students and evening batches for school section.</div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">Do you offer crash courses? <span class="faq-icon">+</span></div>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">Yes, we provide specialized crash courses and extensive test series 3 months prior to board exams for intense revision.</div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">Are parents updated on student progress? <span class="faq-icon">+</span></div>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">Absolutely. We conduct parent-teacher meetings monthly. Additionally, weekly test scores and attendance logs are shared directly via WhatsApp.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Enquiry Section -->
+    <section id="contact" class="section border-t border-slate-200 reveal">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-badge">Contact Us</div>
+          <h2>Admissions / Enquiry</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="enquiry-form-container bg-white">
+            <h3>Student Enquiry Form</h3>
+            <form id="enquiryForm" class="enquiry-form">
+              <div class="form-group">
+                <label for="name">Student Name</label>
+                <input type="text" id="name" required placeholder="Enter full name">
+              </div>
+              <div class="form-group">
+                <label for="course">Interested Course</label>
+                <select id="course" required>
+                  <option value="">Select option...</option>
+                  <option value="school">8th to 10th (SSC)</option>
+                  <option value="science">11th-12th Science</option>
+                  <option value="commerce">11th-12th Commerce</option>
+                  <option value="other">Other / Crash Course</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" required placeholder="10 digit mobile no" pattern="[0-9]{10}">
+              </div>
+              <button type="submit" class="btn btn-primary w-full mt-4">🚀 Submit Enquiry</button>
+            </form>
+          </div>
+          
+          <div class="contact-info-wrapper">
+            <div class="info-card">
+              <div class="info-icon">📍</div>
+              <div>
+                <h4>Our Location</h4>
+                <p>Mandir Road, Titvala, Kalyan, Maharashtra 421605</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon">📞</div>
+              <div>
+                <h4>Call Us</h4>
+                <p>+91 084520 66871</p>
+              </div>
+            </div>
+            <div class="map-container">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15065.264703554474!2d73.20361280327318!3d19.268603685600326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be79308f2d5c1bd%3A0xe6796bed995c6130!2sTitwala%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1717616110000!5m2!1sen!2sin" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container footer-content">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+             <svg class="logo-icon" viewBox="0 0 50 50" width="32" height="32">
+               <path d="M 8 42 L 8 8 L 25 25 L 42 8 L 42 42" fill="transparent" stroke="var(--color-primary)" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" />
+               <path d="M 0 50 L 50 50" stroke="var(--color-accent)" stroke-width="6" />
+             </svg>
+             <span class="logo-text">Shree Mayuresh</span>
+          </a>
+          <p>Shaping the future of students in Titwala through quality education and dedicated mentorship.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="#home">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#courses">Courses</a>
+          <a href="#test-series">Test Series</a>
+          <a href="#contact">Contact</a>
+          <a href="/preloaders-showcase.html" target="_blank" style="color: var(--color-accent); font-weight: bold; margin-top: 1rem;">✨ View 10 AI Preloaders</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p>&copy; <span id="year"></span> Shree Mayuresh Tutorials. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating Actions -->
+    <a href="https://wa.me/918452066871" target="_blank" class="float-wa" aria-label="WhatsApp">WhatsApp</a>
+    <button id="back-to-top" class="back-to-top" aria-label="Back to Top">↑</button>
+
+    <!-- Cookie Banner -->
+    <div id="cookieBanner" class="cookie-banner">
+      <p>We use cookies to improve your experience on our site.</p>
+      <button id="cookieAccept" class="btn btn-primary-outline btn-sm">Accept</button>
+    </div>
+
+    <!-- Notice Board Modal (Envelope Animation simulation) -->
+    <div id="noticeModal" class="modal-overlay">
+      <div class="modal-content notice-envelope">
+        <div class="notice-header">📋 Notice Board</div>
+        <div class="notice-body">
+          <p><strong>ADMISSIONS OPEN FOR 2024-25</strong></p>
+          <ul style="text-align:left; margin-left:1.5rem; margin-top:0.5rem; font-size: 0.875rem;">
+            <li>Early bird discount available till month end!</li>
+            <li>New Crash Course Batches for XII HSC starts soon.</li>
+          </ul>
+        </div>
+        <button id="noticeClose" class="btn btn-secondary mt-4 w-full" style="color:#0f172a; border-color:#0f172a">Close</button>
+      </div>
+    </div>
+
+    <!-- Test Portal Modal -->
+    <div id="testPortal" class="test-portal-overlay">
+      <div class="test-portal">
+        <div class="tp-header">
+          <div class="tp-brand flex items-center gap-2">
+            <svg class="logo-icon" viewBox="0 0 50 50" width="24" height="24">
+              <path d="M 8 42 L 8 8 L 25 25 L 42 8 L 42 42" fill="transparent" stroke="white" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" />
+            </svg>
+            <span class="test-exam-title" id="tpExamTitle">Test Portal</span>
+          </div>
+          <div class="tp-timer" id="tpTimer">03:00:00</div>
+          <button class="btn btn-secondary btn-sm tp-exit-btn" id="tpClose">Exit Test</button>
+        </div>
+        <div class="tp-body">
+          <div class="tp-main">
+            <div class="tp-subjects" id="tpSubjects">
+              <!-- Subjects Tabs populated by JS -->
+            </div>
+            <div class="tp-question-area">
+              <div class="tp-q-header flex items-center justify-between">
+                <span class="tp-q-num" id="tpQNum">Question 1</span>
+                <div class="flex items-center gap-2">
+                   <span class="tp-q-marks">+4, -1</span>
+                   <button class="tp-toggle-palette" id="tpTogglePalette">☰ Palette</button>
+                </div>
+              </div>
+              <div class="tp-q-text" id="tpQuestionText">Loading question...</div>
+              <div class="tp-options" id="tpOptions">
+                <!-- Options populated by JS -->
+              </div>
+            </div>
+          </div>
+          <div class="tp-sidebar">
+            <div class="tp-sidebar-header flex items-center justify-center">Question Palette</div>
+            <div class="tp-palette-guide">
+              <div class="tpg-item"><span class="tpg-bubble ans"></span> Answered</div>
+              <div class="tpg-item"><span class="tpg-bubble unans"></span> Unanswered</div>
+              <div class="tpg-item"><span class="tpg-bubble rev"></span> Marked</div>
+              <div class="tpg-item"><span class="tpg-bubble notvis"></span> Not Visited</div>
+            </div>
+            <div class="tp-palette-grid" id="tpPaletteGrid">
+              <!-- Bubbles populated by JS -->
+            </div>
+          </div>
+        </div>
+        <div class="tp-footer">
+          <div class="tp-actions-left">
+            <button class="btn tp-btn-review" id="btnMarkReview">Mark Review</button>
+            <button class="btn tp-btn-clear" id="btnClearResponse">Clear</button>
+          </div>
+          <div class="tp-actions-right">
+            <button class="btn tp-btn-save" id="btnSaveNext">Save & Next</button>
+            <button class="btn tp-btn-submit" id="btnSubmitTest">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Test Result Modal -->
+    <div id="testResultModal" class="modal-overlay">
+      <div class="modal-content notice-envelope mx-auto text-center">
+        <div class="notice-header mx-auto">Test Submitted! 🏆</div>
+        <div class="notice-body mt-4">
+          <h3 class="result-score mb-2" id="resScore">Score: 0 / 0</h3>
+          <p class="mb-4">Great effort! This was a mock diagnostic test.</p>
+          <div class="flex gap-2 justify-center">
+             <span class="tpg-bubble ans"></span> <span id="resCorrect">0 Correct</span>
+             <span class="tpg-bubble unans ml-4"></span> <span id="resWrong">0 Incorrect</span>
+          </div>
+        </div>
+        <button id="testResultClose" class="btn btn-primary mt-6 w-full">Back to Home</button>
+      </div>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10 AI Inspired Preloaders</title>
+  <style>
+    :root {
+      --g-blue: #4285F4;
+      --g-red: #EA4335;
+      --g-yellow: #FBBC05;
+      --g-green: #34A853;
+    }
+    body { background: #0f172a; color: white; font-family: system-ui, sans-serif; padding: 2rem; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+    .card { background: #1e293b; border-radius: 12px; height: 250px; display: flex; align-items: center; justify-content: center; position: relative; border: 1px solid #334155; }
+    .title { position: absolute; top: 1rem; left: 1rem; font-size: 0.85rem; color: #94a3b8; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+    
+    /* 1. Gemini Spark */
+    .pl-gemini { width: 50px; height: 50px; background: linear-gradient(45deg, var(--g-blue), var(--g-red), var(--g-yellow), var(--g-green)); animation: spin 1.5s cubic-bezier(0.4, 0, 0.2, 1) infinite; clip-path: polygon(50% 0%, 61% 39%, 100% 50%, 61% 61%, 50% 100%, 39% 61%, 0% 50%, 39% 39%); box-shadow: 0 0 20px rgba(66, 133, 244, 0.5); }
+    
+    /* 2. Google AI Dots */
+    .pl-dots { display: flex; gap: 10px; }
+    .pl-dots span { width: 16px; height: 16px; border-radius: 50%; animation: bounce 1.4s infinite ease-in-out both; }
+    .pl-dots span:nth-child(1) { background: var(--g-blue); animation-delay: -0.32s; }
+    .pl-dots span:nth-child(2) { background: var(--g-red); animation-delay: -0.16s; }
+    .pl-dots span:nth-child(3) { background: var(--g-yellow); }
+    .pl-dots span:nth-child(4) { background: var(--g-green); animation-delay: 0.16s; }
+    
+    /* 3. DeepMind Pulse */
+    .pl-pulse { width: 50px; height: 50px; border-radius: 50%; background: var(--g-blue); position: relative; display: flex; justify-content: center; align-items: center; }
+    .pl-pulse::before, .pl-pulse::after { content: ''; position: absolute; inset: 0; border-radius: 50%; background: var(--g-blue); animation: ping 2s cubic-bezier(0,0,0.2,1) infinite; z-index: -1; }
+    .pl-pulse::after { animation-delay: -1s; background: var(--g-red); }
+    
+    /* 4. AI Voice Assistant Bars */
+    .pl-bars { display: flex; gap: 6px; align-items: center; height: 60px; }
+    .pl-bars span { width: 8px; height: 10px; border-radius: 4px; animation: eq 1.2s ease-in-out infinite; }
+    .pl-bars span:nth-child(1) { background: var(--g-blue); animation-delay: 0.0s; }
+    .pl-bars span:nth-child(2) { background: var(--g-red); animation-delay: 0.2s; }
+    .pl-bars span:nth-child(3) { background: var(--g-yellow); animation-delay: 0.4s; }
+    .pl-bars span:nth-child(4) { background: var(--g-green); animation-delay: 0.6s; }
+    
+    /* 5. Gradient Morph Blob */
+    .pl-blob { width: 80px; height: 80px; background: linear-gradient(135deg, var(--g-blue), var(--g-green)); animation: morph 3s ease-in-out infinite; border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; box-shadow: inset 10px 10px 20px rgba(255,255,255,0.2), 0 0 20px rgba(52, 168, 83, 0.4); }
+    
+    /* 6. Neural Sync Rings */
+    .pl-rings { width: 80px; height: 80px; position: relative; }
+    .pl-rings span { position: absolute; inset: 0; border: 3px solid transparent; border-top-color: var(--g-blue); border-radius: 50%; animation: spin 1.5s cubic-bezier(0.5,0,0.5,1) infinite; }
+    .pl-rings span:nth-child(1) { animation-delay: -0.45s; inset: 0px; border-width: 4px; border-top-color: var(--g-blue); }
+    .pl-rings span:nth-child(2) { animation-delay: -0.3s; inset: 10px; border-width: 3px; border-top-color: var(--g-red); }
+    .pl-rings span:nth-child(3) { animation-delay: -0.15s; inset: 20px; border-width: 2px; border-top-color: var(--g-yellow); }
+    
+    /* 7. Quantum Atom Spin */
+    .pl-quantum { width: 70px; height: 70px; position: relative; perspective: 150px; }
+    .pl-quantum div { position: absolute; width: 100%; height: 100%; border-radius: 50%; border: 4px solid var(--g-blue); border-bottom-color: transparent; border-top-color: transparent; animation: spinX 2s linear infinite; }
+    .pl-quantum div:nth-child(2) { border-color: var(--g-red); border-bottom-color: transparent; border-top-color: transparent; animation: spinY 2s linear infinite; }
+    .pl-quantum div:nth-child(3) { border-color: var(--g-yellow); border-bottom-color: transparent; border-top-color: transparent; animation: spinZ 2s linear infinite; }
+    
+    /* 8. Glowing Scanner */
+    .pl-scanner { width: 120px; height: 8px; background: #334155; border-radius: 4px; overflow: hidden; position: relative; }
+    .pl-scanner::after { content: ''; position: absolute; top: 0; left: 0; width: 30%; height: 100%; background: var(--g-blue); box-shadow: 0 0 10px var(--g-blue), 0 0 5px var(--g-blue); animation: scan 1.2s ease-in-out infinite alternate; }
+    
+    /* 9. Radar Sweep */
+    .pl-radar { width: 70px; height: 70px; border-radius: 50%; background: conic-gradient(from 0deg, transparent 70%, rgba(66, 133, 244, 0.8) 100%); position: relative; animation: spin 1.5s linear infinite; border: 2px solid rgba(66, 133, 244, 0.2); }
+    .pl-radar::after { content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 6px; height: 6px; background: var(--g-blue); border-radius: 50%; box-shadow: 0 0 15px 5px rgba(66, 133, 244, 0.6); }
+    
+    /* 10. Typographic Trace */
+    .pl-text { font-family: monospace; font-size: 1.8rem; font-weight: bold; color: white; position: relative; display: flex; gap: 4px; }
+    .pl-text span { animation: glitch 1.5s infinite; color: var(--g-blue); }
+    .pl-text span:nth-child(2) { animation-delay: 0.1s; color: var(--g-red); }
+    .pl-text span:nth-child(3) { animation-delay: 0.2s; color: var(--g-yellow); }
+
+    /* Animations */
+    @keyframes spin { 100% { transform: rotate(360deg); } }
+    @keyframes bounce { 0%, 100% { transform: scale(0); opacity: 0.2; } 50% { transform: scale(1); opacity: 1; } }
+    @keyframes ping { 75%, 100% { transform: scale(2.5); opacity: 0; } }
+    @keyframes eq { 0%, 100% { height: 10px; } 50% { height: 40px; } }
+    @keyframes morph { 0%, 100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; } 50% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; transform: rotate(45deg); } }
+    @keyframes spinX { 100% { transform: rotateX(360deg) rotateZ(180deg); } }
+    @keyframes spinY { 100% { transform: rotateY(360deg) rotateZ(180deg); } }
+    @keyframes spinZ { 100% { transform: rotateZ(360deg) rotateX(180deg); } }
+    @keyframes scan { 0% { left: -40%; } 100% { left: 100%; } }
+    @keyframes glitch { 0%, 100% { opacity: 1; } 50% { opacity: 0.2; } }
+  </style>
+</head>
+<body>
+  <div class="card"><div class="title">1. Gemini Spark</div><div class="pl-gemini"></div></div>
+  <div class="card"><div class="title">2. Google Dots</div><div class="pl-dots"><span></span><span></span><span></span><span></span></div></div>
+  <div class="card"><div class="title">3. DeepMind Pulse</div><div class="pl-pulse"></div></div>
+  <div class="card"><div class="title">4. AI Voice Bars</div><div class="pl-bars"><span></span><span></span><span></span><span></span></div></div>
+  <div class="card"><div class="title">5. Morph Blob</div><div class="pl-blob"></div></div>
+  <div class="card"><div class="title">6. Neural Rings</div><div class="pl-rings"><span></span><span></span><span></span></div></div>
+  <div class="card"><div class="title">7. Quantum Atom</div><div class="pl-quantum"><div></div><div></div><div></div></div></div>
+  <div class="card"><div class="title">8. Glowing Scanner</div><div class="pl-scanner"></div></div>
+  <div class="card"><div class="title">9. Radar Sweep</div><div class="pl-radar"></div></div>
+  <div class="card"><div class="title">10. Code Trace</div><div class="pl-text"><span>A</span><span>I</span><span>.</span></div></div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "vanilla-coaching-website",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "serve -l tcp://0.0.0.0:3000 .",
+    "build": "mkdir -p dist && cp index.html preloaders-showcase.html style.css script.js dist/ && cp -r assets dist/ || true",
+    "lint": "echo 'No linting required'"
+  },
+  "dependencies": {
+    "serve": "^14.2.0"
+  }
+}
